@@ -1,5 +1,7 @@
 :root {
+  --navbar-color: ;
   --text-primary-color: oklch(83.7% 0.128 66.29);
+  --white-color: #fff;
 }
 
 *,
@@ -11,7 +13,7 @@
 }
 
 /*Main Styling*/
-html,
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
@@ -108,7 +110,7 @@ p {
 /* Navbar */
 
 #navbar {
-  background: #333333;
+  background: var(--text-primary-color);
   color: #ffffff;
   overflow: auto;
 }
