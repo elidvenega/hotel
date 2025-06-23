@@ -1,7 +1,10 @@
 :root {
-  --navbar-color: ;
+  --navbar-color: oklch(83.7% 0.128 66.29);
+  --button-color: oklch(37.3% 0.034 259.733);
   --text-primary-color: oklch(83.7% 0.128 66.29);
   --white-color: #fff;
+  --light-color: oklch(98.5% 0 0);
+  --footer-color: oklch(20.5% 0 0);
 }
 
 *,
@@ -23,7 +26,6 @@ body {
 }
 
 a {
-  color: #333333;
   text-decoration: none;
 }
 
@@ -56,36 +58,36 @@ p {
 .btn {
   display: inline-block;
   font-size: 18px;
-  color: #ffffff;
-  background: oklch(37.3% 0.034 259.733);
+  color: var(--white-color);
+  background: var(--navbar-color);
   padding: 13px 20px;
   border: none;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: #f7c08a;
-  color: #333333;
+  background: var(--navbar-color);
+  color: var(--button-color);
 }
 
 .btn-light {
-  background: #f4f4f4;
+  background: var(--light-color);
   color: #333333;
 }
 
 .bg-dark {
-  background: #333333;
-  color: #ffffff;
+  background: var(--button-color);
+  color: var(--white-color);
 }
 
 .bg-light {
-  background: #f4f4f4;
+  background: var(--light-color);
   color: #333333;
 }
 
 .bg-primary {
-  background: #f7c08a;
-  color: #333333;
+  background: var(--navbar-color);
+  color: var(--button-color);
 }
 
 .clr {
@@ -110,13 +112,13 @@ p {
 /* Navbar */
 
 #navbar {
-  background: var(--text-primary-color);
-  color: #ffffff;
+  background: var(--navbar-color);
+  color:  var(--white-color);
   overflow: auto;
 }
 
 #navbar a {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 #navbar h1 {
@@ -141,8 +143,8 @@ p {
 
 #navbar ul li a:hover,
 #navbar ul li a.current {
-  background: #444;
-  color: #f7c08a;
+  /* background: #444;
+  color: #f7c08a; */
 }
 
 /* Showcase*/
@@ -152,7 +154,7 @@ p {
 }
 
 #showcase .showcase-content {
-  color: #ffffff;
+  color:  var(--white-color);
   text-align: center;
   padding-top: 170px;
 }
@@ -275,7 +277,7 @@ p {
 /*Footer*/
 #main-footer {
   text-align: center;
-  background: #444;
-  color: #fff;
+  background: var(--footer-color);
+  color: var(--white-color);
   padding: 20px;
 }
