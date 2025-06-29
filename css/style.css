@@ -1,6 +1,7 @@
 :root {
   --navbar-color: oklch(83.7% 0.128 66.29);
   --button-color: oklch(37.3% 0.034 259.733);
+  --bg-dark: oklch(44.6% 0.043 257.281);
   --text-primary-color: oklch(83.7% 0.128 66.29);
   --white-color: #fff;
   --light-color: oklch(98.5% 0 0);
@@ -48,7 +49,7 @@ p {
 }
 
 .text-primary {
-  color:  var(--text-primary-color);
+  color: var(--text-primary-color);
 }
 
 .lead {
@@ -76,7 +77,7 @@ p {
 }
 
 .bg-dark {
-  background: var(--button-color);
+  background: var(--bg-dark);
   color: var(--white-color);
 }
 
@@ -113,7 +114,7 @@ p {
 
 #navbar {
   background: var(--navbar-color);
-  color:  var(--white-color);
+  color: var(--white-color);
   overflow: auto;
 }
 
@@ -143,8 +144,8 @@ p {
 
 #navbar ul li a:hover,
 #navbar ul li a.current {
-  /* background: #444;
-  color: #f7c08a; */
+  background: #444;
+  color: #f7c08a;
 }
 
 /* Showcase*/
@@ -154,7 +155,7 @@ p {
 }
 
 #showcase .showcase-content {
-  color:  var(--white-color);
+  color: var(--white-color);
   text-align: center;
   padding-top: 170px;
 }
@@ -280,4 +281,69 @@ p {
   background: var(--footer-color);
   color: var(--white-color);
   padding: 20px;
+}
+
+/* media query and mobile size */
+
+@media (max-width: 768px) {
+  #navbar .logo {
+    float: none;
+    text-align: center;
+  }
+
+  #navbar ul,
+  #navbar ul li {
+    float: none;
+  }
+
+  #navbar ul li a {
+    padding: 5px;
+    border-bottom: #444 dotted 1px;
+  }
+
+  /* Showcase */
+  #showcase {
+    height: 1000%;
+  }
+
+  #showcase .showcase-content {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  /* Home Info */
+  #home-info .info-img {
+    display: none;
+  }
+
+  #home-info .info-content {
+    float: none;
+    width: 100%;
+  }
+
+  /* Boxes */
+  .box {
+    float: none;
+    width: 100%;
+  }
+
+  /*About*/
+  #about-info .info-right,
+  #about-info .info-left {
+    float: none;
+    width: 100%;
+  }
+
+  #about-info .info-right {
+    margin-top: 30px;
+  }
+
+  .l-heading {
+    text-align: center;
+  }
+
+  /* Contact */
+  #contact-info .box {
+    border-bottom: #444 dotted 1px;
+  }
 }
